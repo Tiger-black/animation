@@ -1,0 +1,43 @@
+{
+	"appName": "",
+	"remotes": "",
+	"version": "",
+	"cdnhost": "",
+	"publishAPI": {
+		"daily": {
+			"host": "http://toolsdev.shuqudata.com",
+			"deployDo": "/api/awp/publish.do"
+		},
+		"pre": {
+			"host": "http://tools.shuqudata.com",
+			"deployDo": "/api/awp/publish.do"
+		},
+		"production": {
+			"host": "http://tools.shuqudata.com",
+			"deployDo": "/api/awp/publish.do"
+		}
+	},
+	"publish": {
+		"daily": {
+			"host": ["192.168.180.10", "192.168.180.26"],
+			"path": "/opt/www/build/"
+		},
+		"pre": {
+			"host": ["123.57.42.161"],
+			"path": "/opt/www/build/"
+		},
+		"production": {
+			"host": ["101.201.199.232", "123.57.74.74"],
+			"path": "/opt/www/build/"
+		},
+		"tag": {
+			"cdnHost": ["192.168.23.216", "192.168.23.217"],
+			"htmlHost": ["123.57.42.161"],
+			"path": "/opt/www/build/"
+		}
+	},
+	"alias": {
+		"zepto": "webpack-zepto"
+	},
+	"extract-common-to-path": false
+}
