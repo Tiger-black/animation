@@ -1,6 +1,14 @@
-var $ = require('zepto');
-var Index = require('@br/index/index');
-new Index({
-	el: $('h2')
-});
-console.log($('h2'));
+'use strict';
+import '@br/lib/zepto.min';
+import '@br/lib/animation';
+import Url from '@br/lib/url';
+
+function Information() {
+    this.init.apply(this, arguments);
+}
+Information.prototype = {
+    init () {
+    }
+
+};
+new Information();
